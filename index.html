@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+           @media screen and (min-width:1500px) {
+        .box{
+            font-size: 120%;
+
+        }
+      }
+   
+      .container {
+        display: grid;
+        width: 95vw;
+        height: 95vh;
+        grid-template-areas:
+          "header menu menu menu"
+          "hero hero hero hero"
+          "main main w image"
+          "main main w extra"
+          "b b b b";
+        grid-template-rows: 7% 35% 26% 13%;
+        margin: 0% auto;
+      }
+      .box {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        font-size: 350%;
+      }
+      .box1 {
+        grid-area: header;
+        background-color: #24344c;
+        color: white;
+      }
+      .box2 {
+        grid-area: menu;
+        background-color: #ee3c4f;
+        color: white;
+      }
+      .box3 {
+        grid-area: hero;
+        color: white;
+        background-color: #4d86c7;
+      }
+      .box4 {
+        background-color: #24344c;
+        grid-area: main;
+        color: white;
+      }
+      .box5 {
+        grid-area: w;
+        background-color: orange;
+      }
+      .box6 {
+        grid-area: image;
+        background-color: #c0e4e6;
+      }
+      .box7 {
+        grid-area: extra;
+        background-color: #4ebd97;
+      }
+      .box8 {
+        grid-area: b;
+        background-color: #ffd168;
+      }
+
+      
+
+
+      @media screen and (min-width: 768px) {
+        .container {
+          display: grid;
+          width: 95vw;
+          height: 95vh;
+          grid-template-areas:
+            "header menu menu menu"
+            "hero hero hero hero"
+            "main main w image"
+            "main main w extra"
+            "b b b b";
+          grid-template-rows: 7% 35% 26% 13%;
+          margin: 0% auto;
+        }
+        .box {
+          display: grid;
+          justify-content: center;
+          align-items: center;
+          font-size: 120%;
+        }
+        .box1 {
+          grid-area: header;
+          background-color: #24344c;
+          color: white;
+        }
+        .box2 {
+          grid-area: menu;
+          background-color: #ee3c4f;
+          color: white;
+        }
+        .box3 {
+          grid-area: hero;
+          color: white;
+          background-color: #4d86c7;
+        }
+        .box4 {
+          background-color: #24344c;
+          grid-area: main;
+          color: white;
+        }
+        .box5 {
+          grid-area: w;
+          background-color: orange;
+        }
+        .box6 {
+          grid-area: image;
+          background-color: #c0e4e6;
+        }
+        .box7 {
+          grid-area: extra;
+          background-color: #4ebd97;
+        }
+        .box8 {
+          grid-area: b;
+          background-color: #ffd168;
+        }
+        
+      }
+
+   
+      
+     
+
+      @media screen and (min-width: 426px) and (max-width: 768px) {
+        .container {
+          display: grid;
+          width: 97vw;
+          height: 97vh;
+          grid-template-areas:
+            "header header header"
+            "hero hero hero "
+            "menu main main"
+            "menu banner banner"
+            "menu extra image";
+        }
+        .box {
+          height: auto;
+          color: whitesmoke;
+          display: grid;
+          justify-content: center;
+          align-items: center;
+          font-size: 100%;
+          color: black;
+        }
+        .box1 {
+          grid-area: header;
+          color: white;
+          background-color: #101628;
+        }
+        .box2 {
+          grid-area: menu;
+          background-color: #f13c4e;
+          color: white;
+        }
+        .box3 {
+          grid-area: hero;
+          background-color: #4d86c7;
+          color: white;
+        }
+        .box4 {
+          grid-area: main;
+          color: white;
+          background-color: #24344c;
+        }
+        .box5 {
+          grid-area: banner;
+          background-color: #ffd166;
+        }
+        .box6 {
+          grid-area: extra;
+          background-color: #4ebd97;
+        }
+        .box7 {
+          grid-area: image;
+          background-color: #c0e4e6;
+        }
+       
+      } 
+
+      @media screen and (min-width: 300px) and (max-width: 426px) {
+        .container {
+          display: grid;
+          width: 90vw;
+          height: 60vh;
+          grid-template-areas:
+            "Header"
+            "Menu"
+            "Hero"
+            "Main"
+            "Banner"
+            "Extra"
+            "Image";
+          margin: 0% auto;
+          grid-template-rows: 7% 7% 22% 22% auto;
+        }
+        .box {
+          height: auto;
+          color: whitesmoke;
+          background-color: #101628;
+          display: grid;
+          justify-content: center;
+          align-items: center;
+          font-size: 100%;
+          color: black;
+        }
+        .box1 {
+          grid-area: Header;
+          color: white;
+        }
+        .box2 {
+          grid-area: Menu;
+          background-color: #f13c4e;
+          color: white;
+        }
+        .box3 {
+          grid-area: Hero;
+          background-color: #4d86c7;
+          color: white;
+        }
+        .box4 {
+          grid-area: Main;
+          color: white;
+          background-color: #24344c;
+        }
+        .box5 {
+          grid-area: Banner;
+          background-color: #ffd166;
+        }
+        .box6 {
+          grid-area: Extra;
+          background-color: #4ebd97;
+        }
+        .box7 {
+          grid-area: Image;
+          background-color: #c0e4e6;
+        }
+      
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box box1">HEADER</div>
+      <div class="box box2">MENU</div>
+      <div class="box box3">HERO</div>
+      <div class="box box4">MAIN</div>
+      <div class="box box5">BANNER</div>
+      <div class="box box6">EXTRA</div>
+      <div class="box box7">IMAGE</div>
+    </div>
+
+    
+  </body>
+</html>
